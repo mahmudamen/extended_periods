@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+        <menuitem 
+        	id="main_menu_extended_periods_Management"
+        	name="extended periods Management"
+            web_icon="extended_periods,static/description/download.png"
+           />
+</openerp>

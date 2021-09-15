@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="extended_periods_list_sequence" model="ir.sequence">
+            <field name="name">Entity Seq</field>
+            <field name="code">extend.extendedperiodslist</field>
+            <field name="prefix">EXT</field>
+            <field name="padding">2</field>
+        </record>
+    </data>
+</odoo>

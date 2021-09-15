@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+            <record model="report.paperformat" id="paperformat_attendance_recap_report">
+                    <field name="name">paperformat.attendance.recap.report</field>
+                    <field name="default" eval="True"/>
+                    <field name="format">A4</field>
+                    <field name="page_width">0</field>
+                    <field name="page_width">0</field>
+                    <field name="orientation">Portrait</field>
+                    <field name="margin_top">30</field>
+                    <field name="margin_right">5</field>
+                    <field name="margin_bottom">10</field>
+                    <field name="margin_left">5</field>
+                    <field name="header_line" eval="False"/>
+                    <field name="header_spacing">20</field>
+                    <field name="dpi">90</field>
+            </record>
+            <report
+                    id="report_extended_periods"
+                    model="extend.extendedperiodslist"
+                    report_type="qweb-pdf"
+                    string="extended periods"
+                    print_report_name="(object.subject_id.name)"
+                    paperformat="paperformat_attendance_recap_report"
+                    name="extended_periods.extended_periods_document_report"
+                    file="extended_periods.extended_periods_document_report"
+            />
+    </data>
+</odoo>

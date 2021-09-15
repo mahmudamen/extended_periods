@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="extended_periods.extended_periods_document_report">
+            <t t-call="web.html_container">
+                    <t t-call="web.external_layout">
+                            <div class="header" style="border-bottom: 2px solid black">
+                                        <h3 class="text-center">تقرير لجنة مد المدد </h3>
+                                        <h4 class="text-center">
+                                            <strong>من تاريخ </strong>:
+
+                                            <strong>الي تاريخ</strong>:
+
+                                        </h4>
+                                    </div>
+                            <div class="article">
+                                        <table class="table table-condensed table-bordered" style="width: 100%">
+                                            <thead>
+                                                <th class="text-center" style="width: 15%">entity id</th>
+                                                <th class="text-center" style="width: 15%">subject id</th>
+                                                <th class="text-center" style="width: 15%">new city id</th>
+                                                <th class="text-center" style="width: 15%">agency issue date</th>
+                                                <th class="text-center" style="width: 15%">modified expiration date</th>
+                                                <th class="text-center" style="width: 15%">committee issue number to agency</th>
+                                                <th class="text-center" style="width: 15%">advisory opinion issue date</th>
+                                                <th class="text-center" style="width: 15%">issued by the committee to the advisory</th>
+                                                <th class="text-center" style="width: 15%">state</th>
+                                            </thead>
+                                            <tbody>
+                                                <t t-foreach="docs" t-as="doc">
+                                                    <tr>
+                                                        <td>
+                                                            <span t-esc="doc.entity_id.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.subject_id.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.new_city_id.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.agency_issue_date.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.modified_expiration_date.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.committee_issue_number_to_agency.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.advisory_opinion_issue_date.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.issued_by_the_committee_to_the_advisory.name"/>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <span t-esc="doc.state"/>
+                                                        </td>
+                                                    </tr>
+                                                </t>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            <div class="footer">
+                                        <div class="row text-center" style="border-top: 1px solid black;">
+                                            <div class="col col-3 offset-9 text-right">
+                                                <ul class="list-inline mt-2">
+                                                    <li class="list-inline-item">Page:</li>
+                                                    <li class="list-inline-item">
+                                                        <span class="page"/>
+                                                    </li>
+                                                    <li class="list-inline-item">/</li>
+                                                    <li class="list-inline-item">
+                                                        <span class="topage"/>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

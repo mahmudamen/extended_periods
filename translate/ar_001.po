@@ -1,0 +1,389 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* extended_periods
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-08 16:23+0000\n"
+"PO-Revision-Date: 2021-09-08 16:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_needaction
+msgid "Action Needed"
+msgstr "يحتاج فعل"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__partner_address_id
+msgid "Address"
+msgstr "عنوان"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__Administrator
+msgid "Administrator"
+msgstr "المسئول"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_kanban_view
+msgid "Administrator:"
+msgstr "المسئول :  "
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__create_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__create_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__create_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__create_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__create_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__create_uid
+msgid "Created by"
+msgstr "بواسطة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__create_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__create_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__create_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__create_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__create_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__create_date
+msgid "Created on"
+msgstr "انشاء في"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__display_name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__display_name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__display_name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__display_name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__display_name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_doctor
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__is_doctor
+msgid "Doctor"
+msgstr "طبيب"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_kanban_view
+msgid "ENTITY:"
+msgstr "الشركة المنفذة"
+
+#. module: extended_periods
+#: model:res.groups,name:extended_periods.group_extended_periods_employee
+msgid "Employee"
+msgstr "موظف"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_entity
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__is_entity
+msgid "Entity"
+msgstr "الشركة المنفذة"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_form_view
+msgid "Entity Name"
+msgstr "الشركة المنفذة"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_form_view
+msgid "Extended periods list"
+msgstr "قائمة موضوعات مد المدي"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "متابعين (قنوات)"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "متابعين (كيان)"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_search_view
+msgid "Group By"
+msgstr "مجموعة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__id
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__id
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__id
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__id
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__id
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__id
+msgid "ID"
+msgstr "كود"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__reference
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__reference
+msgid "ID Number"
+msgstr "كود"
+
+#. module: extended_periods
+#: model:ir.model.fields,help:extended_periods.field_extend_extendedperiodslist__message_needaction
+#: model:ir.model.fields,help:extended_periods.field_extend_extendedperiodslist__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: extended_periods
+#: model:ir.model.fields,help:extended_periods.field_extend_extendedperiodslist__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_institution
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__is_institution
+msgid "Institution"
+msgstr ""
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_insurance_company
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__is_insurance_company
+msgid "Insurance Company"
+msgstr ""
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_extend_issuedadvisory
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__name
+msgid "Issued By The Committee To The Advisory"
+msgstr "خطاب صادر اللجنة للفتوي"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate____last_update
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate____last_update
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency____last_update
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist____last_update
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory____last_update
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist____last_update
+msgid "Last Modified on"
+msgstr "اخر تعديل في"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__write_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__write_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__write_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__write_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__write_uid
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__write_uid
+msgid "Last Updated by"
+msgstr "اخر تحديث بواسطة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__write_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__write_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__write_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__write_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_issuedadvisory__write_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__write_date
+msgid "Last Updated on"
+msgstr "اخر تحديث في"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: extended_periods
+#: model:res.groups,name:extended_periods.group_extended_periods_manager
+msgid "Manager"
+msgstr "مدير ادارة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_has_error
+msgid "Message Delivery error"
+msgstr "مشكلة في توصيل الرسالة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الحركات"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الاخطاء"
+
+#. module: extended_periods
+#: model:ir.model.fields,help:extended_periods.field_extend_extendedperiodslist__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تحتاج فعل"
+
+#. module: extended_periods
+#: model:ir.model.fields,help:extended_periods.field_extend_extendedperiodslist__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي لم تصل"
+
+#. module: extended_periods
+#: model:ir.model.fields,help:extended_periods.field_extend_extendedperiodslist__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الغير مقروؤة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_pharmacy
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__is_pharmacy
+msgid "Pharmacy"
+msgstr "صيدلية"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__relationship
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__relationship
+msgid "Relationship"
+msgstr "علاقة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__relative_partner_id
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__relative_partner_id
+msgid "Relative_id"
+msgstr "علاقة"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_form_view
+msgid "Subject Name"
+msgstr "اسم الموضوع"
+
+#. module: extended_periods
+#: model_terms:ir.actions.act_window,help:extended_periods.extended_periods_list_act_window
+msgid "There is no examples click here to add new extended periods list."
+msgstr "يمكنك اضافة موضوع مدي مدي جديد هنا"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_unread
+msgid "Unread Messages"
+msgstr "سائل غير مقروؤة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل الغير مقروؤة"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_extend_advisorydate
+#: model:ir.model.fields,field_description:extended_periods.field_extend_advisorydate__name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__advisory_opinion_issue_date
+msgid "advisory opinion issue date"
+msgstr "خطاب صادر اللجنة للفتوي"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_extend_agencyissuedate
+#: model:ir.model.fields,field_description:extended_periods.field_extend_agencyissuedate__name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__agency_issue_date
+msgid "agency issue date"
+msgstr "صادر الجهاز"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_extend_committeeagency
+#: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__name
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__committee_issue_number_to_agency
+msgid "committee issue number to agency"
+msgstr "خطاب صادر اللجنة للجهاز"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__entity_id
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_search_view
+msgid "entity"
+msgstr "الشركة المنفذة"
+
+#. module: extended_periods
+#: model:ir.module.category,name:extended_periods.extended_periods_category
+msgid "extended periods"
+msgstr "لجنة مد المدد"
+
+#. module: extended_periods
+#: model:ir.ui.menu,name:extended_periods.main_menu_extended_periods_Management
+msgid "extended periods Management"
+msgstr "إدارة مد المدد"
+
+#. module: extended_periods
+#: model:ir.actions.act_window,name:extended_periods.extended_periods_list_act_window
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_search_view
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_tree_view
+msgid "extended periods list"
+msgstr "قائمة موضوعات مد المدد"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_extend_extendedperiodslist
+msgid "extended periods list "
+msgstr "قائمة موضوعات مد المدد"
+
+#. module: extended_periods
+#: model:ir.ui.menu,name:extended_periods.extended_periods_list_menu
+msgid "extendedperiodslist"
+msgstr "قائمة موضوعات مد المدد"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__issued_by_the_committee_to_the_advisory
+msgid "issued by the committee to the advisory"
+msgstr "خطاب صادر اللجنة للجهاز براي الفتوي"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__modified_expiration_date
+#: model:ir.model.fields,field_description:extended_periods.field_extend_modifiedlist__name
+msgid "modified expiration date"
+msgstr "تاريخ النهو المعدل المعتمد"
+
+#. module: extended_periods
+#: model:ir.model,name:extended_periods.model_extend_modifiedlist
+msgid "modified expiration date LIST "
+msgstr "قائمة تواريخ النهو المعدل"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__state
+msgid "state"
+msgstr "الحالة"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__subject_id
+#: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_subject
+#: model:ir.model.fields,field_description:extended_periods.field_res_users__is_subject
+msgid "subject"
+msgstr "الموضوع"
+
+#. module: extended_periods
+#: model:ir.model.fields.selection,name:extended_periods.selection__extend_extendedperiodslist__state__inactive
+msgid "غير نشط"
+msgstr "غير نشط"
+
+#. module: extended_periods
+#: model:ir.model.fields.selection,name:extended_periods.selection__extend_extendedperiodslist__state__active
+msgid "نشط"
+msgstr "نشط"
+
+#. module: extended_periods
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_kanban_view
+msgid "modified expiration date:"
+msgstr "النهو"

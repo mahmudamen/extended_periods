@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 17:40+0000\n"
-"PO-Revision-Date: 2021-09-14 17:40+0000\n"
+"POT-Creation-Date: 2021-09-22 09:33+0000\n"
+"PO-Revision-Date: 2021-09-22 09:33+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,13 +22,10 @@ msgstr ""
 
 #. module: extended_periods
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_document_report
-msgid "<strong>From</strong>:"
-msgstr "<strong>من</strong>:"
-
-#. module: extended_periods
-#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_document_report
-msgid "<strong>To</strong>:"
-msgstr "<strong>الي</strong>:"
+msgid ""
+"<strong>من تاريخ </strong>:\n"
+"                                            <strong>الي تاريخ</strong>:"
+msgstr ""
 
 #. module: extended_periods
 #: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_needaction
@@ -60,11 +57,6 @@ msgstr "ثلاث اسابيع علي صادر  اللجنة"
 #: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__message_attachment_count
 msgid "Attachment Count"
 msgstr "عدد المرفقات"
-
-#. module: extended_periods
-#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_document_report
-msgid "Attendance Recap Report"
-msgstr "تقرير لجنة مد المدد"
 
 #. module: extended_periods
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_form_view
@@ -121,6 +113,11 @@ msgstr "الشركة المنفذة"
 #: model:res.groups,name:extended_periods.group_extended_periods_employee
 msgid "Employee"
 msgstr "موظف"
+
+#. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__date_end
+msgid "End Date"
+msgstr ""
 
 #. module: extended_periods
 #: model:ir.model.fields,field_description:extended_periods.field_res_partner__is_entity
@@ -318,6 +315,11 @@ msgid "Relative_id"
 msgstr "علاقة"
 
 #. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__date_start
+msgid "Start Date"
+msgstr ""
+
+#. module: extended_periods
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_form_view
 msgid "Subject Name"
 msgstr "اسم الموضوع"
@@ -379,6 +381,11 @@ msgid "agency issue date"
 msgstr "صادر الجهاز"
 
 #. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__agency_issue_number
+msgid "agency issue number"
+msgstr "رقم وارد الهيئة"
+
+#. module: extended_periods
 #: model:ir.model,name:extended_periods.model_extend_committeeagency
 #: model:ir.model.fields,field_description:extended_periods.field_extend_committeeagency__name
 #: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__committee_issue_number_to_agency
@@ -417,7 +424,7 @@ msgstr "إدارة مد المدد"
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_calendar_view
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_search_view
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_tree_view
-#: model_terms:ir.ui.view,arch_db:extended_periods.view_medical_patient_graph
+#: model_terms:ir.ui.view,arch_db:extended_periods.view_extended_periods_graph
 msgid "extended periods list"
 msgstr "قائمة موضوعات مد المدد"
 
@@ -477,6 +484,11 @@ msgid "new_city_id"
 msgstr "مدينة"
 
 #. module: extended_periods
+#: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__order_number
+msgid "order number"
+msgstr "امر الاسناد"
+
+#. module: extended_periods
 #: model:ir.model.fields,field_description:extended_periods.field_extend_extendedperiodslist__state
 #: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_document_report
 msgid "state"
@@ -500,16 +512,16 @@ msgid "subject_id"
 msgstr "موضوع"
 
 #. module: extended_periods
-#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_list_form_view
-msgid "تقرير"
-msgstr "تقرير"
+#: model_terms:ir.ui.view,arch_db:extended_periods.extended_periods_document_report
+msgid "تقرير لجنة مد المدد"
+msgstr ""
 
 #. module: extended_periods
-#: model:ir.model.fields.selection,name:extended_periods.selection__extend_extendedperiodslist__state__inactive
-msgid "inactive"
-msgstr "خارج"
+#: model:ir.model.fields.selection,name:extended_periods.selection__extend_extendedperiodslist__state__خارج
+msgid "خارج"
+msgstr ""
 
 #. module: extended_periods
-#: model:ir.model.fields.selection,name:extended_periods.selection__extend_extendedperiodslist__state__active
-msgid "active"
-msgstr "داخل"
+#: model:ir.model.fields.selection,name:extended_periods.selection__extend_extendedperiodslist__state__داخل
+msgid "داخل"
+msgstr ""

@@ -12,6 +12,9 @@
             <field name="arch" type="xml">
                 <form string="Extended periods list">
                     <header>
+                        <button  id="planned" name="action_planned" string="planned" class="btn-primary" type="object"/>
+                        <button  id="today" name="action_today" string="today" class="btn-primary" type="object"/>
+                        <button  id="overdue" name="action_overdue" string="overdue" class="btn-primary" type="object"/>
                         <field name="state" widget="statusbar"  option="{'clickable':'1'}"/>
 
                     </header>
@@ -39,15 +42,23 @@
                                      placeholder="City Name"
                                     context="{'default_is_new_city': 1}"
                                      />
-                                <field name="agency_issue_date" widget="many2many_tags"/>
-                                <field name="modified_expiration_date" widget="many2many_tags"/>
-                                <field name="committee_issue_number_to_agency" widget="many2many_tags"/>
-                                <field name="issued_by_the_committee_to_the_advisory" widget="many2many_tags"/>
-                                <field name="Administrator" widget="one2many_list"/>
+                                <group col="5" style="width:100%;">
+                                    <field name="agency_issue_number" style="width: auto;"/>
+                                    <field name="agency_issue_date" widget="many2many_tags" style="width: auto;"/>
+                                </group>
+                                <group style="width:100%;">
+                                    <field name="modified_expiration_date" widget="many2many_tags"/>
+                                    <field name="committee_issue_number_to_agency" widget="many2many_tags"/>
+                                    <field name="issued_by_the_committee_to_the_advisory" widget="many2many_tags"/>
+                                    <field name="order_number" />
+                                    <field name="low_type" />
+                                    <field name="Administrator" widget="one2many_list"/>
 
+                                </group>
                             </group>
                         </group>
                     </sheet>
+
                     <div class="oe_chatter">
                         <field name="message_follower_ids" widget="mail_followers"
                             groups="base.group_user" />
@@ -65,10 +76,13 @@
                     <field name="subject_id"/>
                     <field name="entity_id"/>
                     <field name="new_city_id"/>
+                    <field name="agency_issue_number" />
+                    <field name="order_number" />
                     <field name="agency_issue_date" widget="many2many_tags"/>
                     <field name="modified_expiration_date" widget="many2many_tags"/>
                     <field name="committee_issue_number_to_agency" widget="many2many_tags"/>
                     <field name="issued_by_the_committee_to_the_advisory" widget="many2many_tags"/>
+                    <field name="low_type"/>
                     <field name="Administrator" widget="one2many_list"/>
                 </tree>
             </field>
@@ -85,16 +99,20 @@
                     <field name="subject_id"/>
                     <field name="entity_id"/>
                     <field name="new_city_id"/>
+                    <field name="agency_issue_number" />
                     <field name="agency_issue_date"/>
                     <field name="modified_expiration_date" />
                     <field name="committee_issue_number_to_agency" />
                     <field name="issued_by_the_committee_to_the_advisory"/>
+                    <field name="order_number" />
+                    <field name="low_type"/>
                     <newline />
                     <group expand="0" string="Group By">
                         <filter string="Administrator" name='by_Administrator' domain="[]" context="{'group_by':'Administrator'}"/>
                         <filter string="subject_id" name='by_subject_id' domain="[]" context="{'group_by':'subject_id'}"/>
                         <filter string="entity_id" name='by_entity_id' domain="[]" context="{'group_by':'entity_id'}"/>
                         <filter string="new_city_id" name='by_new_city_id' domain="[]" context="{'group_by':'new_city_id'}"/>
+                        <filter string="low_type" name="low_type" domain="[]" context="{'group_by':'low_type'}"/>
                         <filter string="Last 15 days agency issue date" name="four_weeks"  domain="[('agency_issue_date','>=',(context_today() + relativedelta(days=-15, weekday=0)).strftime('%Y-%m-%d'))]"/>
                         <filter string="After 21 committee issue number to agency" name="four_weeks"  domain="[('committee_issue_number_to_agency','=',(context_today() + relativedelta(days=21, weekday=0)).strftime('%Y-%m-%d'))]"/>
                         <filter string="Expire This Week committee issue number to agency" name="expire_this_week"
@@ -117,7 +135,7 @@
                     <field name="model">extend.extendedperiodslist</field>
                     <field name="arch" type="xml">
                         <kanban >
-                            <progressbar field="activity_state" colors='{"planned": "success", "today": "warning", "overdue": "danger"}'/>
+                            <progressbar field="state" widget="progressbar" colors='{"planned": "success", "today": "warning", "overdue": "danger"}'/>
                             <field name="subject_id"/>
                             <field name="entity_id"/>
                             <field name="new_city_id"/>
@@ -151,6 +169,7 @@
                     <field name="subject_id" />
                     <field name="entity_id" />
                     <field name="new_city_id" />
+                    <field name="low_type"/>
                 </calendar>
             </field>
         </record>
@@ -165,6 +184,7 @@
                     <field name="subject_id" type="measure"/>
                     <field name="entity_id" type="measure"/>
                    <field name="entity_id" type="col"/>
+                    <field name="low_type" type="col"/>
                 </pivot>
             </field>
         </record>
@@ -178,7 +198,9 @@
                     <field name="new_city_id"/>
                      <field name="subject_id" group="True" type="measure" />
                      <field name="entity_id" group="True" type="measure" />
+                     <field name="low_type" group="True" type="measure"/>
                      <field name="Administrator" />
+                     <field name="low_type"/>
                 </graph>
             </field>
         </record>

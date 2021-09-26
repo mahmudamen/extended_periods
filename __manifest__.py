@@ -31,6 +31,7 @@
         'report/report.xml',
         'views/main_menu_file.xml',
         'views/extendedperiodslist.xml',
+        'views/notify.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

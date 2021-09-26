@@ -21,17 +21,38 @@ class ExtendedPeriodsList(models.Model):
     new_city_id = fields.Many2one('res.partner', domain=[('is_new_city', '=', True)], string="new city", required=True)
     name = fields.Char(string='ID', readonly=True)
     agency_issue_date = fields.Many2many('extend.agencyissuedate' ,string='agency issue date')
+    agency_issue_number = fields.Integer(string='agency issue number' , required=True)
     modified_expiration_date = fields.Many2many('extend.modifiedlist' ,string='modified expiration date')
     committee_issue_number_to_agency = fields.Many2many('extend.committeeagency' ,string='committee issue number to agency')
     advisory_opinion_issue_date = fields.Many2many('extend.advisorydate' ,string='advisory opinion issue date')
     issued_by_the_committee_to_the_advisory = fields.Many2many('extend.issuedadvisory' ,string='issued by the committee to the advisory')
+    order_number = fields.Integer(string='order number')
     Administrator = fields.Many2one('res.users', 'Administrator')
     partner_address_id = fields.Many2one('res.partner', string="Address", )
-    state = fields.Selection([('داخل','داخل'),('خارج','خارج')],string="state", defualt='داخل')
-    activity_state = fields.Char(string="activity state",defualt='planned')
+    low_type = fields.Selection([('Low 182', 'Low 182'), ('Low 89', 'Low 89')], string="Low Type", defualt='Low 182' , required=True)
+    state = fields.Selection([('planned','planned'),('today','today'),('overdue','overdue')],string="state", defualt='today' )
+    activity_states = fields.Char(string="activity state",default='today' )
     date_start = fields.Date(string="Start Date", required=True, default=fields.Date.today)
     date_end = fields.Date(string="End Date", required=True, default=fields.Date.today)
 
+    @api.model
+    def default_get(self,fields):
+        rec = super(ExtendedPeriodsList,self).default_get(fields)
+        rec['state'] = 'today'
+        rec['activity_states'] = 'today'
+        return rec
+
+    def action_planned(self):
+        self.activity_states = "planned"
+        self.state = "planned"
+
+    def action_today(self):
+        self.activity_states = "today"
+        self.state = "today"
+
+    def action_overdue(self):
+        self.activity_states = "overdue"
+        self.state = "overdue"
 
     def print_report(self):
         #data = {'date_start': self.date_start, 'date_end': self.date_end}
@@ -60,6 +81,16 @@ class ExtendedPeriodsList(models.Model):
         '''
         address_id = self.entity_id
         self.partner_address_id = address_id
+
+    @api.onchange('committee_issue_number_to_agency')
+    def _onchange_committee_issue_number_to_agency(self):
+        if self.committee_issue_number_to_agency:
+            activity_states = {'activity_states': "planned"}
+            self.update(activity_states)
+            state = {'state': "planned"}
+            self.update(state)
+
+            print('planned')
 
     @api.model
     def send_notiy_agency_issue_date(self):

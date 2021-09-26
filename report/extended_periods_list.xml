@@ -3,14 +3,12 @@
     <data>
         <template id="extended_periods.extended_periods_document_report">
             <t t-call="web.html_container">
-                    <t t-call="web.external_layout">
+
                             <div class="header" style="border-bottom: 2px solid black">
                                         <h3 class="text-center">تقرير لجنة مد المدد </h3>
                                         <h4 class="text-center">
                                             <strong>من تاريخ </strong>:
-
                                             <strong>الي تاريخ</strong>:
-
                                         </h4>
                                     </div>
                             <div class="article">
@@ -77,9 +75,7 @@
                                             </div>
                                         </div>
                                     </div>
-                    </t>
             </t>
         </template>
-
     </data>
 </odoo>
